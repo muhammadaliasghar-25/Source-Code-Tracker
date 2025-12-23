@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Commands package="guidCodeSourceTrackerPackage">
+		<Groups>
+			<Group guid="guidCodeSourceTrackerPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+			</Group>
+		</Groups>
+
+		<Buttons>
+			<Button guid="guidCodeSourceTrackerPackageCmdSet" id="DeclareSourceCommandId" priority="0x0100" type="Button">
+				<Parent guid="guidCodeSourceTrackerPackageCmdSet" id="MyMenuGroup" />
+				<Strings>
+					<ButtonText>Declare Code Source</ButtonText>
+				</Strings>
+			</Button>
+
+			<Button guid="guidCodeSourceTrackerPackageCmdSet" id="ViewStatsCommandId" priority="0x0101" type="Button">
+				<Parent guid="guidCodeSourceTrackerPackageCmdSet" id="MyMenuGroup" />
+				<Strings>
+					<ButtonText>View Code Statistics</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+	</Commands>
+
+	<Symbols>
+		<GuidSymbol name="guidCodeSourceTrackerPackage" value="{4bc8534f-e1f9-4391-a53f-2aac01efb32b}" />
+
+		<GuidSymbol name="guidCodeSourceTrackerPackageCmdSet" value="{549F806D-7035-4316-A3F5-E49ACC0186CC}">
+			<IDSymbol name="MyMenuGroup" value="0x1020" />
+			<IDSymbol name="DeclareSourceCommandId" value="0x0100" />
+			<IDSymbol name="ViewStatsCommandId" value="0x0101" />
+		</GuidSymbol>
+
+		<GuidSymbol name="guidSHLMainMenu" value="{d309f791-903c-11d0-9efc-00a0c911004f}">
+			<IDSymbol name="IDM_VS_MENU_TOOLS" value="0x0085" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>
